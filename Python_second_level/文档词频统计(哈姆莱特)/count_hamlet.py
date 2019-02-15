@@ -1,4 +1,5 @@
-'''文档词频统计 哈姆莱特'''
+#文档词频统计 哈姆莱特
+
 # 读取文件并保存为txt
 with open('hamlet.txt','r') as f:
     txt = f.read()
