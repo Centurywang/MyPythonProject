@@ -1,0 +1,1 @@
+var result_20171318573099265 = { "value":{"count":0,"html":"<ul></ul><div class=\"shop-btns\"> <a class=\"btnblue\" href=\"http://trade.mtime.com/cart/\" data-pan=\"M14_HeadNav_MiniCart_GoToCartBtn\">去购物车结算</a> <dl> <dt>共<span>0</span>件商品</dt> <dd>合计：<span>￥0</span></dd> </dl></div>"},"error":null};var result=result_20171318573099265;
