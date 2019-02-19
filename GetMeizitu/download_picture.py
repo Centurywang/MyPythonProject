@@ -6,20 +6,15 @@ from ConnectMySql import MySQLDB
 from lxml import etree
 import os
 title = None
-headers = {
-    'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
-    'referer' : 'https://www.mzitu.com/'
-
-}
+from set_proxy import get_content
 def download(url):
-    content = requests.get(url,headers=headers).content
+    content = get_content(url)
     try:
         with open(title+'/'+ title + url[-7:]) as f:
             pass
     except:
         with open(title+'/'+ title + url[-7:],'wb+') as f:
             print(title+'/'+ title + url[-7:])
-            sleep(1)
             f.write(content)
         print('保存完成')
 
